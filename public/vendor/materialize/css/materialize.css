@@ -1,0 +1,82 @@
+.carousel {
+  overflow: hidden!important;
+  position: relative!important;
+  width: 100%!important;
+  height: 400px!important;
+  -webkit-perspective: 500px!important;
+          perspective: 500px!important;
+  -webkit-transform-style: preserve-3d!important;
+          transform-style: preserve-3d!important;
+  -webkit-transform-origin: 0% 50%!important;
+          transform-origin: 0% 50%!important;
+}
+
+.carousel.carousel-slider {
+  top: 0!important;
+  left: 0!important;
+}
+
+.carousel.carousel-slider .carousel-fixed-item {
+  position: absolute!important;
+  left: 0!important;
+  right: 0!important;
+  bottom: 20px!important;
+  z-index: 1!important;
+}
+
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+  bottom: 68px!important;
+}
+
+.carousel.carousel-slider .carousel-item-publicidad {
+  width: 100%!important;
+  height: 100%!important;
+  min-height: 400px!important;
+  position: absolute!important;
+  top: 0!important;
+  left: 0!important;
+}
+
+.carousel .carousel-item-publicidad {
+  visibility: hidden;
+  width: 200px!important;
+  height: 200px!important;
+  position: absolute!important;
+  top: 0!important;
+  left: 0!important;
+}
+
+.carousel .carousel-item-publicidad > img {
+  width: 100%!important;
+}
+
+.carousel .indicators {
+  position: absolute!important;
+  text-align: center!important;
+  left: 0!important;
+  right: 0!important;
+  bottom: 0!important;
+  margin: 0!important;
+}
+
+.carousel .indicators .indicator-item {
+  display: inline-block!important;
+  position: relative!important;
+  cursor: pointer!important;
+  height: 8px!important;
+  width: 8px!important;
+  margin: 24px 4px!important;
+  background-color: rgba(255, 255, 255, 0.5)!important;
+  -webkit-transition: background-color .3s!important;
+  transition: background-color .3s!important;
+  border-radius: 50%!important;
+}
+
+.carousel .indicators .indicator-item.active {
+  background-color: #fff!important;
+}
+
+.carousel.scrolling .carousel-item-publicidad .materialboxed,
+.carousel .carousel-item-publicidad:not(.active) .materialboxed {
+  pointer-events: none!important;
+}
